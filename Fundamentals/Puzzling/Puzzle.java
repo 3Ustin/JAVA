@@ -6,7 +6,7 @@ import java.util.Random;
 public class Puzzle {
     public static void main(String[] args){
         int[] arr = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17};
-
+        
     }
     public static ArrayList<Integer> eliminateLessThanTen(int[] arr){
         ArrayList<Integer> newArr = new ArrayList<Integer>();
@@ -28,10 +28,11 @@ public class Puzzle {
     }
     public static ArrayList<String> shuffle(ArrayList<String> arr){
         Collections.shuffle(arr);
-        System.out.println("First: " + arr.get(0) + "Last: " + arr.get(arr.size());
+        System.out.println("First: " + arr.get(0) + "Last: " + arr.get(arr.size()));
         if(arr.get(0) == "a" || arr.get(0) == "e" || arr.get(0) == "i" || arr.get(0) == "o" || arr.get(0) == "u" || arr.get(0) == "y"){
             System.out.println("Vowels!");
         }
+        return arr;
     }
     public static int[] randomInt(){
         int[] arr = new arr[10];
