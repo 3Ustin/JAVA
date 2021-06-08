@@ -18,7 +18,12 @@ public class Puzzle {
         return newArr;
     }
     public static ArrayList<String> nameslessThanFive(String[] arr){
+        ArrayList<String> shuffle = new ArrayList<String>();
         ArrayList<String> newArr = new ArrayList<String>();
+        Collections.shuffle(shuffle);
+        for(int i = 0; i< arr.length;i++){
+            System.out.println(shuffle.get(i));
+        }
         for(int i = 0; i< arr.length;i++){
             if(arr[i].length() < 5){
                 newArr.push(arr[i]);
